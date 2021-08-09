@@ -11,13 +11,13 @@ engine:                      # Engine settings.
     book:
       standard:              # List of book file paths for variant standard.
         - Goi5.1.bin
-        - Drawkiller_EloZoom_big.bin
+   #     - Drawkiller_EloZoom_big.bin
 #     atomic:                # List of book file paths for variant atomic.
 #       - engines/atomicbook1.bin
 #       - engines/atomicbook2.bin
 #     etc.
 #     Use the same pattern for 'giveaway' (antichess), 'crazyhouse', 'horde', 'kingofthehill', 'racingkings' and '3check' as well.
-    min_weight: 65535           # Does not select moves with weight below min_weight (min 0, max: 65535).
+    min_weight: 200           # Does not select moves with weight below min_weight (min 0, max: 65535).
     selection: "best_move"   # Move selection is one of "weighted_random", "uniform_random" or "best_move" (but not below the min_weight in the 2nd and 3rd case).
     max_depth: 2000          # Half move max depth.
 # engine_options:            # Any custom command line params to pass to the engine.
