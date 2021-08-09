@@ -20,11 +20,11 @@ RUN wget --no-check-certificate "https://api.jl-workshop.com/v2/csdlg/download?h
 RUN 7z e 3-4-5.7z
 RUN rm 3-4-5.7z
 
-RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/dabaf2220fe0c77400a5f71a91952f510e6a126b/linux64modern/stockfish_21080516_x64_modern.zip" -O stockfishmodern.zip
+#RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/dabaf2220fe0c77400a5f71a91952f510e6a126b/linux64modern/stockfish_21080516_x64_modern.zip" -O stockfishmodern.zip
 #RUN wget --no-check-certificate "https://tests.stockfishchess.org/api/nn/nn-46832cfbead3.nnue" -O nn-46832cfbead3.nnue
-RUN 7z e stockfishmodern.zip 
-RUN rm stockfishmodern.zip
-RUN mv stockfish_21080516_x64_modern stockfishmodern
+#RUN 7z e stockfishmodern.zip 
+#RUN rm stockfishmodern.zip
+#RUN mv stockfish_21080516_x64_modern stockfishmodern
 
 COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
